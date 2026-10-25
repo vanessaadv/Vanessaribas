@@ -3,24 +3,12 @@ services:
     name: vanessa-ribas-advocacia
     runtime: node
     plan: starter
-    region: ohio
-    buildCommand: "echo sem build"
+    buildCommand: npm install
     startCommand: npm start
-    healthCheckPath: /
     disk:
       name: contatos
       mountPath: /var/data
       sizeGB: 1
     envVars:
-      - key: NODE_VERSION
-        value: "22.14.0"
-      - key: NODE_ENV
-        value: production
-      - key: DB_PATH
-        value: /var/data/contatos.db
-      - key: ADMIN_EMAIL
-        value: vanessaadvribas@gmail.com
-      - key: SESSION_SECRET
-        generateValue: true
       - key: ADMIN_PASSWORD
         sync: false

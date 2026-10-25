@@ -11,9 +11,14 @@ const { DatabaseSync } = require('node:sqlite');
 const ROOT = __dirname;
 const PUBLIC = path.join(ROOT, 'public');
 const PORT = Number(process.env.PORT) || 3000;
-const ADMIN_EMAIL = (process.env.ADMIN_EMAIL || 'admin@escritorio.com').toLowerCase();
+const CONFIG_EMAIL = JSON.parse(fs.readFileSync(path.join(ROOT, 'config.json'), 'utf8')).contato?.email;
+const ADMIN_EMAIL = (process.env.ADMIN_EMAIL || CONFIG_EMAIL || 'admin@escritorio.com').toLowerCase();
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || '';
-const SECRET = process.env.SESSION_SECRET || crypto.randomBytes(32).toString('hex');
+// No Render, o disco persistente fica em /var/data; localmente, usa a pasta data/.
+const DATA_DIR = process.env.DB_PATH ? path.dirname(process.env.DB_PATH)
+  : fs.existsSync('/var/data') ? '/var/data' : path.join(ROOT, 'data');
+const DB_FILE = process.env.DB_PATH || path.join(DATA_DIR, 'contatos.db');
+const PRODUCTION = process.env.NODE_ENV === 'production' || Boolean(process.env.RENDER);
 const SESSION_HOURS = 12;
 const STATUS = ['novo', 'em_atendimento', 'concluido', 'arquivado'];
 
@@ -22,8 +27,19 @@ if (!ADMIN_PASSWORD) {
 }
 
 // ---------- Banco de dados ----------
-fs.mkdirSync(path.join(ROOT, 'data'), { recursive: true });
-const db = new DatabaseSync(process.env.DB_PATH || path.join(ROOT, 'data', 'contatos.db'));
+fs.mkdirSync(DATA_DIR, { recursive: true });
+const db = new DatabaseSync(DB_FILE);
+
+// Chave das sessões: guardada no disco para o login não cair a cada reinício.
+function sessionSecret() {
+  if (process.env.SESSION_SECRET) return process.env.SESSION_SECRET;
+  const file = path.join(DATA_DIR, '.segredo-sessao');
+  try { return fs.readFileSync(file, 'utf8').trim(); } catch {}
+  const novo = crypto.randomBytes(32).toString('hex');
+  fs.writeFileSync(file, novo, { mode: 0o600 });
+  return novo;
+}
+const SECRET = sessionSecret();
 db.exec(`
   CREATE TABLE IF NOT EXISTS contatos (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -131,7 +147,7 @@ function isAuthed(req) {
 }
 
 function sessionCookie(value, maxAge) {
-  const secure = process.env.NODE_ENV === 'production' ? '; Secure' : '';
+  const secure = PRODUCTION ? '; Secure' : '';
   return `sessao=${value}; HttpOnly; SameSite=Strict; Path=/; Max-Age=${maxAge}${secure}`;
 }
 
