@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{pessoa}} | {{area}}</title>
+<meta name="description" content="{{descricao}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+{{fontes}}
+{{tema}}
+<link rel="icon" href="/img/favicon.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topo">
+  <div class="container topo-inner">
+    <a href="/" class="marca">{{brand}}</a>
+    <nav>
+      <a href="#areas">Áreas de atuação</a>
+      <a href="#historia">Sobre</a>
+      <a href="#faq">Perguntas frequentes</a>
+      <a href="#contato">Contato</a>
+      <a href="{{zap}}" class="btn btn-sm" target="_blank" rel="noopener">{{telefone}}</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">{{pessoa}} · {{oab}}</p>
+        <h1>{{hero_titulo}}</h1>
+        <p class="lead">{{hero_texto}}</p>
+        <div class="acoes">
+          <a href="{{zap}}" class="btn" target="_blank" rel="noopener">Fale com o escritório</a>
+          <a href="#areas" class="btn btn-claro">Áreas de atuação</a>
+        </div>
+      </div>
+      <div class="hero-foto">{{foto}}</div>
+    </div>
+  </section>
+
+  <section class="faixa-destaques">
+    <div class="container destaques">{{destaques}}</div>
+  </section>
+
+  <section id="areas" class="secao">
+    <div class="container">
+      <p class="eyebrow centro">Áreas de atuação</p>
+      <h2 class="centro">Como posso te ajudar?</h2>
+      <div class="grade">{{areas}}</div>
+      <div class="centro mt"><a href="{{zap}}" class="btn" target="_blank" rel="noopener">Fale com o escritório</a></div>
+    </div>
+  </section>
+
+  <section id="historia" class="secao secao-escura">
+    <div class="container historia">
+      <div class="historia-foto">{{foto_historia}}</div>
+      <div>
+        <p class="eyebrow">Minha história</p>
+        <h2>{{sobre_titulo}}</h2>
+        <p class="lead">{{sobre_texto}}</p>
+        {{historia}}
+        {{instagram_cta}}
+        <p class="oab">{{oab}}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="container">
+      <p class="eyebrow centro">Como atuamos</p>
+      <h2 class="centro">Cada caso, com cuidado em todas as etapas</h2>
+      <ol class="etapas">{{etapas}}</ol>
+    </div>
+  </section>
+
+  <section id="faq" class="secao secao-alt">
+    <div class="container estreito">
+      <p class="eyebrow centro">Dúvidas</p>
+      <h2 class="centro">Perguntas frequentes</h2>
+      <div class="faq">{{faq}}</div>
+    </div>
+  </section>
+
+  <section id="contato" class="secao">
+    <div class="container contato">
+      <div>
+        <p class="eyebrow">Contato</p>
+        <h2>Conheça nosso espaço</h2>
+        <p>{{espaco_texto}}</p>
+        <ul class="info">
+          <li><strong>Telefone / WhatsApp</strong> <a href="{{zap}}" target="_blank" rel="noopener">{{telefone}}</a></li>
+          <li><strong>E-mail</strong> <a href="mailto:{{email}}">{{email}}</a></li>
+          <li><strong>Endereço</strong> {{endereco}}</li>
+          {{instagram}}
+        </ul>
+        {{mapa}}
+      </div>
+      <form id="form-contato" class="form" novalidate>
+        <h3>Envie sua mensagem</h3>
+        <label>Nome<input name="nome" required maxlength="120" autocomplete="name"></label>
+        <label>E-mail<input name="email" type="email" required maxlength="160" autocomplete="email"></label>
+        <label>Telefone / WhatsApp<input name="telefone" maxlength="40" autocomplete="tel"></label>
+        <label>Assunto
+          <select name="assunto">
+            <option>Direito de Família</option>
+            <option>Direito Previdenciário</option>
+            <option>Outro assunto</option>
+          </select>
+        </label>
+        <label>Mensagem<textarea name="mensagem" rows="5" required maxlength="4000"></textarea></label>
+        <input name="site" class="isca" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn" type="submit">Enviar mensagem</button>
+        <p class="aviso" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="container rodape-inner">
+    <div class="rodape-marca">{{logo_rodape}}<span>{{oab}}</span></div>
+    <div>{{endereco}}</div>
+    <div>© {{ano}} {{nome}} Advocacia</div>
+  </div>
+</footer>
+<a href="{{zap}}" class="zap-flutuante" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm0-21.6A11.8 11.8 0 0 0 1.8 17.9L.1 24l6.3-1.6A11.8 11.8 0 1 0 12 .2z"/></svg>
+</a>
+<script src="/site.js"></script>
+</body>
+</html>

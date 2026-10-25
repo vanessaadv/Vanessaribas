@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Painel de contatos | {{nome}}</title>
+{{fontes}}
+{{tema}}
+<link rel="icon" href="/img/favicon.png">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/painel/painel.css">
+</head>
+<body>
+<header class="topo">
+  <div class="container topo-inner">
+    <a href="/" class="marca">{{brand}}</a>
+    <nav>
+      <a href="/api/contatos.csv">Exportar planilha</a>
+      <button id="sair" class="btn btn-sm btn-claro">Sair</button>
+    </nav>
+  </div>
+</header>
+<main class="container painel">
+  <h1>Contatos</h1>
+  <div class="resumo" id="resumo"></div>
+  <div class="filtros">
+    <input id="busca" type="search" placeholder="Buscar por nome, e-mail, assunto...">
+    <select id="filtro-status">
+      <option value="">Todos (exceto arquivados)</option>
+      <option value="novo">Novos</option>
+      <option value="em_atendimento">Em atendimento</option>
+      <option value="concluido">Concluídos</option>
+      <option value="arquivado">Arquivados</option>
+    </select>
+  </div>
+  <div class="layout">
+    <ul id="lista" class="lista"></ul>
+    <section id="detalhe" class="detalhe vazio">Selecione um contato para ver os detalhes.</section>
+  </div>
+</main>
+<script src="/painel/painel.js"></script>
+</body>
+</html>

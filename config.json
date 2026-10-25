@@ -1,0 +1,193 @@
+{
+  "nome": "Vanessa Ribas",
+  "titulo_pessoa": "Dra. Vanessa Ribas",
+  "marca_subtitulo": "Advogada",
+  "oab": "OAB/PR 105.128",
+  "area": "Direito de Família e Previdenciário",
+  "hero_titulo": "Advocacia em Direito de Família e Previdenciário",
+  "hero_texto": "Atendimento jurídico próximo e humanizado para proteger sua família e garantir seus direitos junto ao INSS, com clareza em cada etapa.",
+  "descricao": "Advocacia em Direito de Família e Previdenciário, com atendimento próximo e humanizado.",
+  "foto": "/img/vanessa-topo.jpg",
+  "destaques": [
+    {
+      "titulo": "Família",
+      "texto": "Divórcio, guarda, pensão alimentícia e inventário, com sensibilidade e segurança."
+    },
+    {
+      "titulo": "Aposentadorias",
+      "texto": "Análise do seu tempo de contribuição e do melhor benefício para você."
+    },
+    {
+      "titulo": "Benefícios do INSS",
+      "texto": "Auxílio-doença, auxílio-acidente, pensão por morte, salário-maternidade, BPC/LOAS e revisões."
+    }
+  ],
+  "sobre_titulo": "Conheça a Dra. Vanessa Ribas",
+  "sobre_texto": "Advogada atuante em Direito de Família e Direito Previdenciário, dedicada a oferecer um atendimento claro, ético e acolhedor. Cada caso é tratado com escuta atenta e estratégia pensada para a realidade de quem está do outro lado.",
+  "areas": [
+    {
+      "titulo": "Divórcio",
+      "texto": "Divórcio consensual ou litigioso, judicial ou em cartório, com partilha de bens."
+    },
+    {
+      "titulo": "Guarda e convivência",
+      "texto": "Guarda compartilhada ou unilateral e regulamentação de visitas, sempre pensando no bem-estar dos filhos."
+    },
+    {
+      "titulo": "Pensão alimentícia",
+      "texto": "Pedido, revisão e execução de alimentos."
+    },
+    {
+      "titulo": "Inventário e partilha",
+      "texto": "Inventário judicial ou extrajudicial e planejamento sucessório."
+    },
+    {
+      "titulo": "União estável",
+      "texto": "Reconhecimento e dissolução de união estável."
+    },
+    {
+      "titulo": "Investigação de paternidade",
+      "texto": "Reconhecimento de paternidade, inclusive com exame de DNA, e seus efeitos como pensão e herança."
+    },
+    {
+      "titulo": "Alienação parental",
+      "texto": "Proteção da convivência saudável entre filhos e pais quando um deles dificulta esse vínculo."
+    },
+    {
+      "titulo": "Regime de bens e pacto antenupcial",
+      "texto": "Orientação na escolha do regime de bens, pacto antenupcial e alteração de regime."
+    },
+    {
+      "titulo": "Adoção",
+      "texto": "Acompanhamento jurídico em todas as etapas do processo de adoção."
+    },
+    {
+      "titulo": "Curatela e interdição",
+      "texto": "Proteção de pessoas que não conseguem cuidar sozinhas da própria vida civil."
+    },
+    {
+      "titulo": "Aposentadorias",
+      "texto": "Por idade, por tempo de contribuição, especial, rural e da pessoa com deficiência."
+    },
+    {
+      "titulo": "Auxílio-doença e invalidez",
+      "texto": "Benefícios por incapacidade temporária ou permanente para o trabalho."
+    },
+    {
+      "titulo": "Auxílio-acidente",
+      "texto": "Indenização mensal para quem ficou com sequelas que reduzem a capacidade de trabalho."
+    },
+    {
+      "titulo": "Pensão por morte",
+      "texto": "Garantia do benefício aos dependentes do segurado que faleceu."
+    },
+    {
+      "titulo": "Salário-maternidade",
+      "texto": "Para gestantes, adotantes e trabalhadoras urbanas, rurais, autônomas ou desempregadas."
+    },
+    {
+      "titulo": "BPC/LOAS",
+      "texto": "Benefício assistencial para idosos e pessoas com deficiência de baixa renda."
+    },
+    {
+      "titulo": "Auxílio-reclusão",
+      "texto": "Amparo à família de segurado de baixa renda que está preso."
+    },
+    {
+      "titulo": "Revisão de benefícios",
+      "texto": "Análise do seu benefício para corrigir valores pagos a menor."
+    },
+    {
+      "titulo": "Planejamento previdenciário",
+      "texto": "Estudo para você se aposentar no melhor momento e com o melhor valor."
+    },
+    {
+      "titulo": "Benefício negado pelo INSS",
+      "texto": "Recurso administrativo ou ação judicial quando o pedido foi indeferido."
+    }
+  ],
+  "historia": [
+    "Desde pequena eu ouvia do meu pai: “você vai ser advogada”. Ele dizia isso com tanta certeza que, quando chegou a hora de escolher uma profissão, o Direito já fazia parte de quem eu era.",
+    "Em 2024 perdi meu pai. A saudade é enorme, mas escolhi transformar essa dor em propósito. Hoje me dedico ainda mais à advocacia, e cada cliente que atendo com cuidado é também uma forma de honrar quem acreditou em mim antes de todo mundo.",
+    "É por ele, também, que compartilho conteúdo no Instagram: informação jurídica clara e acessível, para que mais pessoas conheçam e defendam os seus direitos."
+  ],
+  "etapas": [
+    {
+      "titulo": "Escuta atenta",
+      "texto": "Entendemos a sua história e o que é importante para você."
+    },
+    {
+      "titulo": "Análise técnica",
+      "texto": "Estudamos o caso, os documentos e as alternativas possíveis."
+    },
+    {
+      "titulo": "Orientação clara",
+      "texto": "Explicamos os caminhos, prazos e riscos sem juridiquês."
+    },
+    {
+      "titulo": "Acompanhamento constante",
+      "texto": "Você recebe atualizações em cada etapa do processo."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Como funciona a primeira consulta?",
+      "resposta": "Na primeira conversa você conta a sua situação com calma e nós ouvimos com atenção, analisamos os documentos que você já tem e explicamos de forma simples quais são os seus direitos, os caminhos possíveis, os prazos e os custos envolvidos. Ao final, você sai sabendo exatamente quais são os próximos passos e quais documentos ainda serão necessários. A consulta pode ser presencial, no escritório em Bituruna/PR, ou online."
+    },
+    {
+      "pergunta": "O atendimento pode ser online?",
+      "resposta": "Sim. Atendemos clientes de todo o Brasil por videochamada e WhatsApp, com a mesma atenção do atendimento presencial. Os documentos podem ser enviados digitalmente, os contratos e procurações são assinados de forma eletrônica e os processos tramitam pelo sistema eletrônico da Justiça, então você acompanha tudo sem precisar se deslocar. Se preferir, também é possível agendar um horário no escritório em Bituruna/PR."
+    },
+    {
+      "pergunta": "É possível fazer o divórcio em cartório?",
+      "resposta": "Sim. O divórcio extrajudicial é feito por escritura pública em cartório quando o casal está de acordo sobre o fim do casamento e sobre a divisão dos bens. Se houver filhos menores ou incapazes, as questões de guarda, convivência e pensão precisam estar resolvidas antes na Justiça. É um caminho bem mais rápido que o processo judicial, podendo ser concluído em poucos dias, mas a presença de advogado é obrigatória."
+    },
+    {
+      "pergunta": "Como é calculada a pensão alimentícia?",
+      "resposta": "Não existe um percentual fixo definido em lei. O valor é definido considerando a necessidade de quem recebe (alimentação, escola, saúde, moradia, lazer) e a possibilidade financeira de quem paga, de forma proporcional. A pensão pode ser revisada sempre que houver mudança na situação de uma das partes e, em caso de atraso, é possível cobrar os valores na Justiça, inclusive com penhora de bens e até prisão civil do devedor."
+    },
+    {
+      "pergunta": "Como funciona a guarda compartilhada?",
+      "resposta": "Na guarda compartilhada, pai e mãe dividem as responsabilidades e as decisões importantes sobre a vida dos filhos, como escola, saúde e atividades. Desde 2014 ela é a regra no Brasil, salvo quando um dos pais não deseja a guarda ou quando há risco de violência doméstica. A criança tem uma residência de referência e a convivência com o outro genitor é organizada de forma equilibrada. A guarda compartilhada não elimina a pensão alimentícia."
+    },
+    {
+      "pergunta": "Quem tem direito ao BPC/LOAS?",
+      "resposta": "O BPC/LOAS é um benefício assistencial de um salário mínimo pago pelo INSS a pessoas com 65 anos ou mais e a pessoas com deficiência de qualquer idade que tenham impedimento de longo prazo (física, mental, intelectual ou sensorial). Em ambos os casos, é preciso comprovar baixa renda: em regra, renda por pessoa da família de até 1/4 do salário mínimo, além de estar com o Cadastro Único (CadÚnico) atualizado. Não é necessário ter contribuído para o INSS."
+    },
+    {
+      "pergunta": "Quem tem direito ao auxílio-acidente?",
+      "resposta": "Tem direito o segurado empregado (inclusive doméstico), o trabalhador avulso e o segurado especial (trabalhador rural) que sofreu um acidente de qualquer natureza, no trabalho ou fora dele, e ficou com sequelas que reduzem a capacidade para o trabalho que exercia. O benefício corresponde a 50% do salário de benefício, não exige carência e pode ser recebido junto com o salário, já que tem caráter de indenização. É pago até a aposentadoria."
+    },
+    {
+      "pergunta": "Estou desempregada. Posso receber salário-maternidade?",
+      "resposta": "Em muitos casos, sim. Mesmo sem contribuir, a pessoa mantém a qualidade de segurada do INSS por um período após a última contribuição (o chamado período de graça), que em regra é de 12 meses e pode chegar a 24 ou 36 meses em algumas situações, como desemprego involuntário comprovado. Se o parto, a adoção ou a guarda para adoção acontecer dentro desse período, é possível receber o salário-maternidade por 120 dias."
+    },
+    {
+      "pergunta": "O INSS negou meu benefício. E agora?",
+      "resposta": "Uma negativa do INSS não é o fim do caminho. Muitos pedidos são indeferidos por falta de documentos, erro no cadastro ou avaliação equivocada na perícia. É possível apresentar recurso administrativo à Junta de Recursos em até 30 dias após a ciência da decisão, ou entrar com ação na Justiça Federal. Analisamos a carta de indeferimento e o seu histórico para indicar a melhor estratégia e reunir as provas que faltaram."
+    }
+  ],
+  "espaco_texto": "Um ambiente pensado para receber você com conforto, acolhimento e total confidencialidade.",
+  "contato": {
+    "telefone": "(42) 99930-6586",
+    "whatsapp": "5542999306586",
+    "whatsapp_mensagem": "Olá, Dra. Vanessa! Vim pelo site e gostaria de atendimento.",
+    "email": "vanessaadvribas@gmail.com",
+    "endereco": "Av. Governador Moisés Lupion, 322 - Centro, Bituruna/PR - CEP 84640-000",
+    "instagram": "vanessa_ribaas",
+    "mapa": "Avenida Governador Moisés Lupion, 322, Centro, Bituruna, PR"
+  },
+  "cores": {
+    "primaria": "#213D2D",
+    "secundaria": "#B8975A",
+    "fundo": "#F4EFEA",
+    "texto": "#1F2622"
+  },
+  "fontes": {
+    "titulos": "Tenor Sans",
+    "texto": "Questrial"
+  },
+  "logo": "/img/logo-monograma.png",
+  "foto_historia": "/img/vanessa-historia.jpg",
+  "logo_completo": "/img/logo-completo.png"
+}

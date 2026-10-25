@@ -1,0 +1,11 @@
+{
+  "name": "vanessa-ribas-advocacia",
+  "private": true,
+  "description": "Site de Vanessa Ribas Advocacia com painel de contatos",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}

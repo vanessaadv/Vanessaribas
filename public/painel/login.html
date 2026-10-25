@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Entrar | {{nome}}</title>
+{{fontes}}
+{{tema}}
+<link rel="icon" href="/img/favicon.png">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/painel/painel.css">
+</head>
+<body class="tela-login">
+<form id="login" class="form caixa-login">
+  <div class="marca-login">{{brand}}</div>
+  <h1>Painel de contatos</h1>
+  <label>E-mail<input name="email" type="email" required autocomplete="username"></label>
+  <label>Senha<input name="senha" type="password" required autocomplete="current-password"></label>
+  <button class="btn" type="submit">Entrar</button>
+  <p class="aviso erro" role="alert"></p>
+</form>
+<script>
+const f = document.getElementById('login');
+f.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const r = await fetch('/api/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(f))) });
+  if (r.ok) location.href = '/painel';
+  else f.querySelector('.aviso').textContent = (await r.json()).erro;
+});
+</script>
+</body>
+</html>
