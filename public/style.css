@@ -127,4 +127,4 @@ nav a{text-decoration:none;font-weight:600;font-size:.95rem}
 .faq-grupo{font-size:.8rem;text-transform:uppercase;letter-spacing:.2em;color:var(--acento);font-family:var(--fonte-texto);font-weight:700;margin:22px 0 4px}
 .faq-grupo:first-child{margin-top:0}
 .btn-ouro{background:var(--secundaria);color:var(--primaria);margin-top:8px}
-.historia p:not(.eyebrow):not(.oab){text-align:justify}
+main p:not(.eyebrow):not(.oab):not(.aviso):not(.centro){text-align:justify}
