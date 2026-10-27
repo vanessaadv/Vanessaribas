@@ -13,7 +13,8 @@ const PUBLIC = path.join(ROOT, 'public');
 const PORT = Number(process.env.PORT) || 3000;
 const CONFIG_EMAIL = JSON.parse(fs.readFileSync(path.join(ROOT, 'config.json'), 'utf8')).contato?.email;
 const ADMIN_EMAIL = (process.env.ADMIN_EMAIL || CONFIG_EMAIL || 'admin@escritorio.com').toLowerCase();
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || '';
+// trim: no celular é comum colar a senha com um espaço sobrando no fim.
+const ADMIN_PASSWORD = (process.env.ADMIN_PASSWORD || '').trim();
 // No Render, o disco persistente fica em /var/data; localmente, usa a pasta data/.
 const DATA_DIR = process.env.DB_PATH ? path.dirname(process.env.DB_PATH)
   : fs.existsSync('/var/data') ? '/var/data' : path.join(ROOT, 'data');
@@ -230,7 +231,7 @@ async function handle(req, res) {
     if (rateLimited('login:' + clientIp(req), 8, 15 * 60e3)) return send(res, 429, { erro: 'Muitas tentativas. Aguarde 15 minutos.' });
     let b;
     try { b = await readJson(req); } catch { return send(res, 400, { erro: 'Requisição inválida.' }); }
-    const ok = ADMIN_PASSWORD && safeEqual(String(b.email || '').toLowerCase(), ADMIN_EMAIL) && safeEqual(b.senha || '', ADMIN_PASSWORD);
+    const ok = ADMIN_PASSWORD && safeEqual(String(b.email || '').trim().toLowerCase(), ADMIN_EMAIL) && safeEqual(String(b.senha || '').trim(), ADMIN_PASSWORD);
     if (!ok) return send(res, 401, { erro: 'E-mail ou senha incorretos.' });
     return send(res, 200, { ok: true }, undefined, { 'Set-Cookie': sessionCookie(createSession(), SESSION_HOURS * 3600) });
   }
